@@ -9,9 +9,12 @@ set -e
 cd "${0%/*}/.."
 
 # let's fake failing test for now 
-echo "Running tests"
-echo "............................" 
-echo "Failed!" && exit 1
+#echo "Running tests"
+#echo "............................" 
+#echo "Failed!" && exit 1
+
+javac *.java
+java TestRunner
 
 # example of commands for different languages
 # eslint .         # JS code quality check
